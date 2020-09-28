@@ -43,7 +43,7 @@ After running migration you need to create data in the database by using either 
 python manage.py shell
 
 >>>  from polls.models import Question, Choice      # import from models.py
->>>  from django.utils import timezone              # self explicit
+>>>  from django.utils import timezone
 >>>  q = Question(question_text="What is your favorite tea?", pub_date=timezone.now())           # Question to ask
 >>>  q.save()
 >>>  q = Question.objects.get(pk=1)                 # get just the question instead of a list in an array
