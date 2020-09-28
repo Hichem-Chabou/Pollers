@@ -16,7 +16,7 @@ pip install pipenv
 # install dependencies
 pipenv install
 ```
-Then you need to be in the same folder as `manage.py` 
+Then you need to be in the same folder as `manage.py` :
 ```
 cd pollers
 ```
