@@ -12,19 +12,20 @@
 <form action="{% url 'polls:vote' question.id %}" method="post" class="p-1">
 	{% csrf_token %} 
 	{% for choice in question.choice_set.all %}
-		<div class="form-check">
+		<div class=" custom-control custom-radio">
 			<input
 				type="radio"
 				name="choice"
-				class="form-check-input"
+				class="custom-control-input"
 				id="choice{{ forloop.counter }}"
 				value="{{ choice.id }}"
 			/>
-			<label for="choice{{ forloop.counter }}">{{ choice.choice_text }}</label
+			<label class="custom-control-label" for="choice{{ forloop.counter }}">{{ choice.choice_text }}</label
 			>
 		</div>
 	{% endfor %}
 	<input type="submit" value="Vote" class="btn btn-success btn-lg btn-block mt-4" />
 </form>
 <a class="btn btn-secondary btn-sm mb-3 mt-3 ml-1" href="{% url 'polls:index' %}">Back To Polls</a>
+
 {% endblock %}
