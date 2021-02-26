@@ -67,4 +67,7 @@ python manage.py runserver
 
 # If the port 8000 is used, you can change to another one like 8071
 python manage.py runserver 8071
-```
+```  
+
+## License :scroll:  
+[MIT](https://github.com/Hichem-Chabou/Pollers/blob/main/LICENSE)
