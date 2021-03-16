@@ -36,10 +36,11 @@ pipenv run python manage.py migrate
 python manage.py migrate
 ```
 
-After running migration you need to create data in the database by using either the interactive shell or the admin dashboard
+After running migration you need to create data in the database by using either the interactive shell or the admin dashboard  
+
+Using the shell:
 
 ```
-# Using the shell
 python manage.py shell
 
 >>>  from polls.models import Question, Choice      # import from models.py
