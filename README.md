@@ -1,5 +1,10 @@
 # Pollers
- A simple polls website made with django
+ A simple polls website made with django  
+ 
+## Built With  
+* [Python](https://www.python.org/)  
+* [Django](https://www.djangoproject.com/)  
+* [Bootstrap](https://getbootstrap.com/)   
 
 ## Requirement
  
